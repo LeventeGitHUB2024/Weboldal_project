@@ -43,35 +43,35 @@
 :root {
   --radius: 0.875rem;
 
-  /* Brand: deep royal blue #003399 and vibrant orange #ff6600 */
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.18 0.04 265);
+  /* Real Expert Brand Palette: Clean light gray background, dark text, vibrant orange primary */
+  --background: oklch(0.98 0.005 250);          /* Finom világosszürke háttér, hogy a fehér elemek kiugorjanak */
+  --foreground: oklch(0.15 0.01 250);          /* Sötétszürke/fekete modern szövegszín */
 
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.18 0.04 265);
+  --card: oklch(1 0 0);                        /* Tiszta fehér kártyák és panelek */
+  --card-foreground: oklch(0.15 0.01 250);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.18 0.04 265);
+  --popover-foreground: oklch(0.15 0.01 250);
 
-  --primary: oklch(0.34 0.22 266);            /* #003399 royal blue */
-  --primary-foreground: oklch(0.99 0 0);
+  --primary: oklch(0.65 0.23 42);              /* Hivatalos Expert Élénk Narancssárga */
+  --primary-foreground: oklch(1 0 0);          /* Fehér szöveg a narancs gombokon */
 
-  --accent: oklch(0.68 0.20 41);               /* #ff6600 orange */
-  --accent-foreground: oklch(0.99 0 0);
+  --accent: oklch(0.65 0.23 42);               /* Az akcentus elemek is az Expert narancsot használják */
+  --accent-foreground: oklch(1 0 0);
 
-  --secondary: oklch(0.97 0.005 250);          /* ultra-light gray */
-  --secondary-foreground: oklch(0.18 0.04 265);
-  --muted: oklch(0.97 0.005 250);
-  --muted-foreground: oklch(0.48 0.02 260);
+  --secondary: oklch(0.93 0.01 250);          /* Valamivel sötétebb szürke a másodlagos elemeknek */
+  --secondary-foreground: oklch(0.15 0.01 250);
+  --muted: oklch(0.93 0.01 250);
+  --muted-foreground: oklch(0.5 0.02 250);
 
   --destructive: oklch(0.6 0.22 27);
-  --destructive-foreground: oklch(0.99 0 0);
+  --destructive-foreground: oklch(1 0 0);
 
   --success: oklch(0.62 0.16 150);
-  --success-foreground: oklch(0.99 0 0);
+  --success-foreground: oklch(1 0 0);
 
-  --border: oklch(0.92 0.008 260);
-  --input: oklch(0.92 0.008 260);
-  --ring: oklch(0.34 0.22 266);
+  --border: oklch(0.9 0.01 250);               /* Finom szegélyek a letisztult hatásért */
+  --input: oklch(0.9 0.01 250);
+  --ring: oklch(0.65 0.23 42);                 /* Narancssárga fókuszgyűrű az elemek körül */
 }
 
 @layer base {
@@ -99,7 +99,7 @@
 }
 
 @utility text-gradient-brand {
-  background: linear-gradient(135deg, var(--color-primary), oklch(0.5 0.24 270));
+  background: linear-gradient(135deg, oklch(0.15 0.01 250), oklch(0.4 0.02 250));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
